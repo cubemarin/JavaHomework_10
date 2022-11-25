@@ -32,7 +32,7 @@ public class MoviePosterManager {
         int resultNumber;
         if (limit < movies.length) {
             resultNumber = limit;
-            } else {
+        } else {
             resultNumber = movies.length;
         }
 

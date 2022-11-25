@@ -26,15 +26,7 @@ public class MoviePosterManagerTest {
         manager.save(movie6);
         manager.save(movie7);
 
-        String[] expected = {
-                movie1,
-                movie2,
-                movie3,
-                movie4,
-                movie5,
-                movie6,
-                movie7,
-        };
+        String[] expected = {movie1, movie2, movie3, movie4, movie5, movie6, movie7,};
         String[] actual = manager.findAll();
 
         Assertions.assertArrayEquals(expected, actual);
@@ -50,15 +42,7 @@ public class MoviePosterManagerTest {
         manager.save(movie6);
         manager.save(movie7);
 
-        String[] expected = {
-                movie7,
-                movie6,
-                movie5,
-                movie4,
-                movie3,
-                movie2,
-                movie1,
-        };
+        String[] expected = {movie7, movie6, movie5, movie4, movie3, movie2, movie1,};
         String[] actual = manager.findLast();
 
         Assertions.assertArrayEquals(expected, actual);
